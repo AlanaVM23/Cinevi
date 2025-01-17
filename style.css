@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Cormorant+SC:wght@300;400;500;600;700&family=Poetsen+One&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Cormorant+SC:wght@300;400;500;600;700&family=Parisienne&family=Pinyon+Script&family=Poetsen+One&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cantata+One&family=Cinzel:wght@400..900&family=Cormorant+SC:wght@300;400;500;600;700&family=Parisienne&family=Pinyon+Script&family=Poetsen+One&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&family=Vast+Shadow&display=swap');
 
 :root{
     --cor-de-fundo: #323232;
@@ -6,8 +7,8 @@
     --cor-detalhes: #dfb32e;
     --cor-texto: #fff;
     --fonte-principal: "Bodoni Moda SC", serif;
-    --fonte-secundaria: "Relaway", sans-serif;
-    --fonte-tercearia: "Parisienne", serif;
+    --fonte-secundaria: "Cantata One", serif;
+    --fonte-tercearia: "Pinyon Script", serif;
 }
 
 body{
@@ -25,14 +26,94 @@ body{
     gap: 20px;
     height: 80px;
     background-color: var(--cor-de-destaque);
-    font-size: 35px;
-}
-
-.cabecalho_img{
-    width: 50px;
-    height: auto;
 }
 
 .cabecalho_texto{
     color: var(--cor-texto);
+    font-size: 50px;
+    align-self: center;
+    font-family: var(--fonte-secundaria);
+    text-shadow: 5px 5px var(--cor-de-fundo);
+}
+
+.lista{
+    margin: 40px 80px;
+    padding: 10px 20px 25px 20px;
+    overflow-y: auto;
+    background-color: var(--cor-de-destaque);
+    border-radius: 15px;
+    height: 590px;
+}
+
+.lista::-webkit-scrollbar {
+    background: #444;
+    border-radius: 15px; 
+}
+
+.lista::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    border-radius: 15px; 
+}
+
+.lista_titulo{
+    color: var(--cor-texto);
+    font-size: 50px;
+    text-align: center;
+    margin:20px 0px 30px 0px;
+    font-family: var(--fonte-tercearia);
+    font-weight: lighter;
+    text-shadow: 3px 3px var(--cor-de-fundo)
+}
+
+.lista_catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+    flex-grow: 2;
+}
+
+.lista_catalogo_cards{
+    background-color: var(--cor-de-fundo);
+    padding: 20px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 15px;
+    width: 210px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+    color: var(--cor-texto);
+}
+
+.lista_cards_img{
+    width: 210px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.lista_cards_texto{
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    padding: 0px 7px;
+    margin: 20px 0px 7px 0px;
+    text-shadow: 1px 1px var(--cor-de-destaque);
+}
+
+.lista_cards_campo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7px;
+    align-items: center;
+}
+
+.lista_cards_campo_preco{
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin: 0;
+    text-shadow: 1px 1px var(--cor-de-destaque);
+}
+
+.lista_cards_campo_excluir{
+height: 35px;
+width: auto;
 }
