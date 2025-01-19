@@ -9,10 +9,10 @@ function adicionarCard(event) {
     event.preventDefault(); 
 
     const nomeFilme = document.querySelector("#movie-title").value.trim();
-    const precoFilme = document.querySelector("#movie-price").value.trim();
+    const generoFilme = document.querySelector("#movie-gender").value.trim();
     const imagemFilme = fileInput.files[0];
 
-    if (!nomeFilme || !precoFilme || !imagemFilme) {
+    if (!nomeFilme || !generoFilme || !imagemFilme) {
         alert("Por favor, preencha todos os campos e selecione uma imagem!");
         return;
     }
@@ -26,7 +26,7 @@ function adicionarCard(event) {
         <img class="lista_cards_img" src="${imagemURL}" alt="Poster do filme ${nomeFilme}">
         <p class="lista_cards_texto">${nomeFilme}</p>
         <div class="lista_cards_campo">
-            <p class="lista_cards_campo_preco">R$ ${precoFilme},00</p>
+            <p class="lista_cards_campo_genero">${generoFilme}</p>
             <img class="lista_cards_campo_excluir" src="img/icons8-lixo-25 (1).png" alt="Excluir">
         </div>
     `;

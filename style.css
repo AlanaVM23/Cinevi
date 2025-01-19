@@ -111,7 +111,7 @@ body{
     align-items: center;
 }
 
-.lista_cards_campo_preco{
+.lista_cards_campo_genero{
     font-family: var(--fonte-principal);
     font-size: 18px;
     color: var(--cor-texto);
