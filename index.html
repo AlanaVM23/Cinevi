@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons8-filme-16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -155,9 +156,33 @@
         <section>
 
         </section>
+        <section class="formulario">
+            <h2 class="formulario_titulo">Adicionar Filmes:</h2>
+            <section class="formulario_secoes">
+                <form id="card-form">
+                    <div class="formulario_secoes_campos">
+                        <input class="formulario_secoes_campos_input" type="text" id="movie-title" placeholder="Insira nome do filme" required>
+                    </div>
+                    <div class="formulario_secoes_campos">
+                        <input class="formulario_secoes_campos_input" type="text" id="movie-price" placeholder="Insira o valor" required>
+                    </div>
+                    <div class="formulario_secoes_campos">
+                        <input type="file" id="file-input" class="enviar_img" accept="image/*" required>
+                        <label for="file-input" class="campo_imagem">Escolher imagem</label>
+                    </div>
+                    <div class="formulario_secoes_btn">
+                        <button type="submit" class="btn_form">Criar Card</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+        <section id="card-container" class="cards"></section>
     </main>
-    <footer>
-
+    <footer class="rodape">
+        <h1 class="rodape_texto">Desenvolvido por Alana Ventura Maróstica</h1>
+        <h2 class="rodape_data">2025</h2>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
