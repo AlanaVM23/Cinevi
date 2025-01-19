@@ -34,6 +34,7 @@ function adicionarCard(event) {
     listaCatalogo.appendChild(novoCard);
     alert(`O filme "${nomeFilme}" foi adicinado ao catalogo com sucesso!`);
     form.reset();
+    labelImagem.textContent = "Escolher imagem";
 }
 
 function excluirCard(event) {
